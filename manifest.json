@@ -1,0 +1,9 @@
+{
+  "id": "flomo-quick-capture",
+  "name": "Flomo 快速记录",
+  "version": "1.4.0",
+  "minAppVersion": "1.11.0",
+  "description": "文字、录音和图片快速记录，支持腾讯云转写、年度 noteCount、附件清理与今日重逢。",
+  "author": "Raymond",
+  "isDesktopOnly": false
+}

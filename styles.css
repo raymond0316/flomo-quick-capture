@@ -1,0 +1,88 @@
+.modal.flomo-capture-minimal {position:relative;width:560px;max-width:calc(100vw - 24px);max-height:calc(100dvh - 32px);padding:24px;border-radius:22px;background:var(--background-primary);border:1px solid var(--background-modifier-border);box-shadow:0 20px 45px #0003;display:flex;flex-direction:column;}
+.flomo-capture-minimal .modal-title {font-size:21px;font-weight:600;letter-spacing:.4px;padding-right:32px;}
+.flomo-capture-minimal .modal-content.flomo-content {margin-top:8px;min-height:0;display:flex;flex-direction:column;overflow:hidden;}
+.flomo-capture-minimal .flomo-body {min-height:0;overflow-y:auto;overscroll-behavior:contain;flex:1 1 auto;}
+.flomo-capture-minimal textarea.flomo-input {display:block;width:100%;box-sizing:border-box;min-height:180px;max-height:45dvh;padding:8px 0;border:0;box-shadow:none;background:transparent;resize:vertical;font-size:16px;line-height:1.8;}
+.flomo-capture-minimal .flomo-status:empty {display:none;}
+.flomo-capture-minimal .flomo-status {font-size:13px;line-height:1.6;margin:8px 0 12px;color:var(--text-muted);overflow-wrap:anywhere;}
+.flomo-capture-minimal .flomo-tools {display:flex;gap:6px;flex-wrap:wrap;margin:12px 0;}
+.flomo-capture-minimal button {min-height:44px;border-radius:10px;box-shadow:none;}
+.flomo-capture-minimal .flomo-tools button {display:inline-flex;align-items:center;justify-content:center;gap:8px;background:transparent;font-size:13px;padding:0 12px;color:var(--text-muted);}
+.flomo-capture-minimal .flomo-tools button:first-child {color:#3b82f6;}
+.flomo-capture-minimal .flomo-tools button:hover {background:var(--background-modifier-hover);}
+.flomo-capture-minimal .flomo-tools svg {height:18px;width:18px;}
+.flomo-capture-minimal .flomo-images {display:flex;flex-wrap:wrap;gap:10px;}
+.flomo-capture-minimal .flomo-images>div {width:100px;margin-bottom:14px;}
+.flomo-capture-minimal .flomo-images img {width:100px;height:86px;border-radius:10px;object-fit:cover!important;}
+.flomo-capture-minimal .flomo-images button {width:100%;background:transparent;font-size:12px;color:var(--text-muted);}
+.flomo-capture-minimal .flomo-clips>div {border-radius:12px;background:var(--background-secondary);padding:12px;margin-bottom:12px;}
+.flomo-capture-minimal .flomo-clips p {margin:0 0 8px;font-size:12px;color:var(--text-muted);}
+.flomo-capture-minimal audio {width:100%;max-width:100%;}
+.flomo-capture-minimal .flomo-footer {flex:0 0 auto;border-top:1px solid var(--background-modifier-border);padding-top:12px;margin-top:12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.flomo-capture-minimal .flomo-draft-area {min-height:44px;display:flex;align-items:center;gap:2px;flex-wrap:wrap;font-size:12px;color:var(--text-muted);}
+.flomo-capture-minimal .flomo-draft-label.is-error {color:var(--text-error);}
+.flomo-capture-minimal .flomo-footer .flomo-draft-area button {background:transparent;padding:0 5px;font-size:12px;color:var(--text-muted);}
+.flomo-capture-minimal .flomo-footer button.flomo-discard {color:var(--text-error);}
+.flomo-capture-minimal .flomo-footer .flomo-actions {margin-left:auto;display:flex;align-items:center;gap:8px;}
+.flomo-capture-minimal .flomo-footer button {width:auto;flex:0 0 auto;margin:0;min-height:44px;border-radius:10px;font-size:14px;box-shadow:none;}
+.flomo-capture-minimal .flomo-footer .flomo-cancel {background:transparent;color:var(--text-muted);padding:0 12px;}
+.flomo-capture-minimal .flomo-footer .mod-cta {background:#3b82f6;color:#fff;font-weight:600;padding:0 22px;}
+.flomo-capture-minimal .flomo-footer .mod-cta:hover {background:#2563eb;}
+.flomo-capture-minimal [hidden] {display:none!important;}
+.flomo-capture-minimal .flomo-tag-suggestions {position:absolute;z-index:100;box-sizing:border-box;max-height:240px;overflow-y:auto;overscroll-behavior:contain;border:1px solid var(--background-modifier-border);border-radius:14px;background:var(--background-secondary);box-shadow:0 10px 30px #0004;padding:5px;margin:0;}
+.flomo-capture-minimal .flomo-tag-suggestions button {display:block;width:100%;text-align:left;background:transparent;color:var(--text-normal);border:0;box-shadow:none;min-height:40px;padding:7px 10px;white-space:normal;overflow-wrap:anywhere;}
+.flomo-capture-minimal .flomo-tag-suggestions button.is-selected,.flomo-capture-minimal .flomo-tag-suggestions button:hover {background:var(--background-modifier-hover);}
+.flomo-mobile-viewport {top:var(--flomo-viewport-top,0)!important;bottom:auto!important;height:var(--flomo-viewport-height,100dvh)!important;box-sizing:border-box;padding:12px!important;align-items:center!important;}
+.flomo-mobile-viewport .modal.flomo-capture-minimal {max-height:calc(var(--flomo-viewport-height,100dvh) - 24px)!important;margin:0!important;}
+.flomo-keyboard-open .modal.flomo-capture-minimal {padding:16px;}
+.flomo-keyboard-open textarea.flomo-input {min-height:80px;max-height:calc(var(--flomo-viewport-height,100dvh) - 190px);resize:none;}
+@media(max-width:420px){.modal.flomo-capture-minimal {padding:20px 18px;}.flomo-capture-minimal .flomo-tools {gap:0;}.flomo-capture-minimal .flomo-tools button {padding:0 10px;}.flomo-capture-minimal textarea.flomo-input {min-height:160px;}.flomo-capture-minimal .flomo-draft-area {flex-basis:100%;}.flomo-keyboard-open textarea.flomo-input {min-height:72px;}.flomo-keyboard-open .flomo-footer {padding-top:6px;margin-top:6px;}.flomo-keyboard-open .flomo-tools {margin:4px 0;}}
+
+.flomo-capture-minimal .flomo-tools button.flomo-delete-recording {color:var(--text-error);}
+/* Keep mobile theme rules and native keyboard insets from reintroducing overflow. */
+.modal.flomo-capture-minimal .flomo-body,
+.modal.flomo-capture-minimal .flomo-content {min-width:0;width:100%;box-sizing:border-box;overflow-x:hidden;}
+.modal.flomo-capture-minimal .flomo-tools {box-sizing:border-box;width:100%;max-width:100%;min-width:0;margin:8px 0!important;padding:4px;flex-wrap:wrap;}
+.modal.flomo-capture-minimal .flomo-tools button {box-sizing:border-box;flex:0 1 auto;max-width:100%;white-space:normal;}
+.modal.flomo-capture-minimal .flomo-actions {min-width:0;flex-wrap:wrap;}
+.modal-container.flomo-mobile-viewport {position:fixed!important;inset:auto!important;top:var(--flomo-viewport-top,0)!important;left:0!important;width:100%!important;height:var(--flomo-viewport-height,100dvh)!important;min-height:0!important;max-height:none!important;transform:none!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:12px!important;padding-bottom:max(12px,env(safe-area-inset-bottom))!important;overflow:hidden!important;}
+.modal-container.flomo-mobile-viewport .modal.flomo-capture-minimal {position:relative!important;inset:auto!important;transform:none!important;box-sizing:border-box!important;flex:0 1 560px!important;width:100%!important;min-width:0!important;min-height:0!important;max-width:560px!important;max-height:100%!important;margin:0!important;}
+.modal-container.flomo-mobile-viewport .modal.flomo-capture-minimal .modal-content {flex:1 1 auto!important;min-height:0!important;max-height:none!important;overflow:hidden!important;}
+.modal-container.flomo-mobile-viewport .modal.flomo-capture-minimal .flomo-body {flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;}
+.modal-container.flomo-mobile-viewport.flomo-keyboard-open .modal.flomo-capture-minimal {padding:12px 16px!important;}
+.modal-container.flomo-mobile-viewport.flomo-keyboard-open .flomo-input {height:96px;min-height:64px!important;max-height:calc(var(--flomo-viewport-height) - 210px);}
+.modal-container.flomo-mobile-viewport.flomo-keyboard-open .flomo-draft-area {min-height:28px;}
+.flomo-cleanup .modal-content {overflow-y:auto;}
+.flomo-cleanup-list {display:flex;flex-direction:column;gap:12px;margin:16px 0;}
+.flomo-cleanup-row {display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid var(--background-modifier-border);}
+.flomo-cleanup-row>div {min-width:0;flex:1;}
+.flomo-cleanup-path,.flomo-cleanup-row small {overflow-wrap:anywhere;}
+.flomo-cleanup-row small {display:block;color:var(--text-muted);margin:4px 0;}
+.flomo-cleanup button {min-height:36px;}
+.flomo-review .modal-content {overflow-y:auto;}
+.flomo-review-head {display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin:4px 0 14px;}
+.flomo-review-title-sub {font-size:12px;color:var(--text-muted);}
+.flomo-review-progress {display:flex;align-items:center;gap:8px;flex:0 0 auto;}
+.flomo-review-dots {display:flex;align-items:center;gap:5px;}
+.flomo-review-dot {width:7px;height:7px;border-radius:999px;background:var(--background-modifier-border-hover);display:inline-block;}
+.flomo-review-dot.is-seen {background:#3b82f6;}
+.flomo-review-count {font-size:12px;color:var(--text-muted);}
+.flomo-review-card {border:1px solid var(--background-modifier-border);border-radius:12px;padding:14px;background:var(--background-secondary);cursor:pointer;}
+.flomo-review-card:hover {border-color:var(--interactive-accent);}
+.flomo-review-date {font-size:13px;color:var(--text-muted);margin-bottom:8px;}
+.flomo-review-thumb {display:block;max-width:100%;max-height:180px;border-radius:10px;object-fit:cover;margin-bottom:8px;}
+.flomo-review-body {font-size:14px;line-height:1.8;margin:0 0 8px;white-space:pre-wrap;overflow-wrap:anywhere;}
+.flomo-review-tags {display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;}
+.flomo-review-tag {font-size:12px;color:#3b82f6;background:var(--background-primary);border-radius:999px;padding:2px 10px;}
+.flomo-review-audio {display:block;font-size:12px;color:var(--text-muted);margin-bottom:8px;}
+.flomo-review-nav {display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-top:12px;}
+.flomo-review-nav button {min-height:36px;border-radius:10px;box-shadow:none;}
+.flomo-review-nav button[disabled] {opacity:.45;cursor:not-allowed;}
+.flomo-review-nav .flomo-review-next {background:#3b82f6;color:#fff;font-weight:600;padding:0 18px;}
+.flomo-review-nav .flomo-review-next:hover {background:#2563eb;}
+.flomo-review-done {display:flex;flex-direction:column;align-items:center;text-align:center;padding:32px 8px 8px;}
+.flomo-review-check {font-size:44px;line-height:1;color:#3b82f6;margin-bottom:14px;}
+.flomo-review-done-title {font-size:18px;font-weight:600;margin-bottom:10px;}
+.flomo-review-done-sub {font-size:13px;color:var(--text-muted);line-height:1.7;}
+.flomo-review-done .flomo-review-nav {justify-content:center;}
+@media(max-width:420px){.flomo-review-card {padding:12px;}.flomo-review-thumb {max-height:140px;}.flomo-review-head {flex-wrap:wrap;}.flomo-review-nav {gap:10px;}.flomo-review-nav button {min-height:46px;font-size:15px;padding:0 16px;}}
